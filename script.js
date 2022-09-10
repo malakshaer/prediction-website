@@ -33,12 +33,10 @@ async function getData(name) {
   console.log(respData2);
   console.log(respData3);
 
+  main.innerHTML = "";
   addAgeToPage(respData1);
   addGenderToPage(respData2);
   addNationalityToPage(respData3);
-
-  //clean up
-  //main.innerHTML = "";
 }
 
 function addAgeToPage(data) {
