@@ -14,6 +14,14 @@
     margin: 0;
     min-height: 100vh;
   }
+
+  p{
+    color: #fff;
+    padding-bottom: 20px;
+    font-family: fantasy;
+    font-size: 30px;
+    text-align: center;
+  }
   .image-frame{
     max-width: 300px;
     max-height: 300px;
