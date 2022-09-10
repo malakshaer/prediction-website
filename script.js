@@ -1,10 +1,23 @@
 const main = document.getElementById("main");
 const form = document.getElementById("form");
 const search = document.getElementById("search");
+const imageElement = document.querySelector("#image");
+const imageLink = document.querySelector("#imageLink");
 
 const url1 = (name) => ` https://api.agify.io/?name=${name}`;
 const url2 = (name) => ` https://api.genderize.io?name=r${name}`;
 const url3 = (name) => ` https://api.nationalize.io/?name=${name}`;
+const urlDog = `https://dog.ceo/api/breeds/image/random`;
+
+fetch(urlDog)
+  .then((response) => response.json())
+  .then((data) => {
+    console.log(data);
+    imageElement.src = data.message;
+  })
+  .catch((error) => {
+    console.log("Error: " + error);
+  });
 
 async function getData(name) {
   const resp1 = await fetch(url1(name), { origin: "cors" });
