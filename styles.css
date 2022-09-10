@@ -29,6 +29,17 @@
     outline: none;
   }
 
+  .submit{
+    background-color: #fff;
+    border: none;
+    border-radius: 25px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    font-family: inherit;
+    font-size: 1rem;
+    padding: 1rem;
+    font-weight: bold;
+  }
+
   .info{
     font-size: 1rem;
     text-align: center;
