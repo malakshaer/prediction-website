@@ -28,3 +28,8 @@
   input:focus {
     outline: none;
   }
+
+  .info{
+    font-size: 1rem;
+    text-align: center;
+  }
